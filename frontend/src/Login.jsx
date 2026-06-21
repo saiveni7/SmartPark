@@ -8,7 +8,7 @@ function Login({ onLogin }) {
 
   const handleLogin = () => {
 
-    fetch("http://localhost:8080/auth/login", {
+    fetch("https://YOUR-BACKEND-URL.onrender.com/auth/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ username, password })
